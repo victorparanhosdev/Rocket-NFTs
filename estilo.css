@@ -114,21 +114,30 @@ span.txt-nfts {
   color: var(--color-branco);
   align-items: center;
   justify-content: center;
+  border-bottom: 1px solid var(--color-cinza);
 
 }
-.caixa-mark {
-  max-width: 28.1rem;
+.lado-esquerdo {
   border-right: 1px solid var(--color-cinza);
-  border-bottom: 1px solid var(--color-cinza);
+  padding-right: 6.7rem;
+  
+
 }
+
 .caixa-mark h1{
   font-weight: 600;
-  font-size: 5rem
+  font-size: 5rem;
+  margin: auto;
 }
-.caixa-mark h5{
+.espacador {
+  margin-bottom: 7rem;
+}
+.caixa-mark p{
+
   font-weight: 600;
   font-size: 2rem;
   color: var(--color-cinza);
+ 
 }
 
 .caixa-de-txt-principal {
