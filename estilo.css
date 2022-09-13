@@ -190,6 +190,7 @@ margin-right: 12.6rem;
 }
 .allimagens {
   width: 100%;
+  display: block;
 }
 
 /* Conteudo 3 */
