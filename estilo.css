@@ -30,14 +30,16 @@ li {
 }
 
 
+
 /* Corpo */
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.6rem;
   background: url("./assets/background.png") black no-repeat;
-  background-size: cover;
-  background-position: top center;
+  background-position: top;
+  
 }
+
 
 
 /* Cabeçalho */
@@ -116,22 +118,34 @@ span.txt-nfts {
   justify-content: center;
   border-bottom: 1px solid var(--color-cinza);
 
-}
-.lado-esquerdo {
-  border-right: 1px solid var(--color-cinza);
-  padding-right: 6.7rem;
-  
 
 }
+
+.caixa-mark {
+  display: grid;
+  place-items: center;
+ 
+}
+
 
 .caixa-mark h1{
+  text-align: center;
   font-weight: 600;
   font-size: 5rem;
+
 }
+
+.lado-direito {
+  border-left: 1px solid var(--color-cinza);
+  margin-left: 6.7rem;
+}
+
+
 .espacador {
   margin-bottom: 7rem;
 }
 .caixa-mark p{
+  text-align: center;
 
   font-weight: 600;
   font-size: 2rem;
@@ -141,15 +155,95 @@ span.txt-nfts {
 
 .caixa-de-txt-principal {
   max-width: 95.2rem;
-  height: 21.4rem;
   display: flex;
+  margin: 7rem auto 7rem 6.8rem;
+ 
+
+}
+.caixa-de-txt-1{
+margin-right: 12.6rem;
 
 }
 
-.caixa-de-txt-1 {
+.caixa-de-txt-1 p, .caixa-de-txt-2 p{
+  font-size: 1.8rem;
+ 
+  text-align: justify;
+  font-weight: 400;
+  
+}
+.caixa-de-txt-1 p span, .caixa-de-txt-2 p span {
+  color: var(--color-laranja);
+  text-decoration: underline;
+  
+  
+}
+
+
+.btn-lorem {
+  display: inline-block;
+  margin-top: 6.3rem;
+  color: var(--color-branco);
+  text-decoration: underline;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+.allimagens {
+  width: 100%;
+}
+
+/* Conteudo 3 */
+
+.caixa-conteudo-3 {
+  margin: 15rem 0;
+  max-width: 126.59rem;
+}
+.caixa-conteudo-3 h1 {
+  color: var(--color-branco);
+  font-size: 5rem;
+ 
+}
+
+.caixa-astronauta {
+  margin-top: 15.8rem;
+}
+.caixa-conteudo-3 h1 span {
+  color: var(--color-laranja);
+}
+.caixa-astronauta div h1 {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+.caixa-astronauta div h1 img {
+  width: 5rem;
+  height: 5rem;
+ 
+}
+.caixa-astronauta div {
+  max-width: 37.69rem;
 
 }
 
-.caixa-de-txt-2 {
 
+
+.caixa-astronauta h1{
+  font-size: 3rem;
+  font-weight: 500;
+}
+.caixa-astronauta p {
+  color: var(--color-cinza);
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.caixa-astronauta p span{
+  font-size: 3rem;
+  color: var(--color-laranja);
+  font-size: 2rem;
+  font-weight: 500;
+}
+.caixa-astronauta div img{
+  width: 100%;
 }
