@@ -31,6 +31,7 @@ li {
 .section-2 {
   max-width: 144rem;
   margin: auto;
+
 }
 
 
@@ -43,6 +44,7 @@ body {
   background-position: top;
   
 }
+
 
 
 
@@ -100,6 +102,17 @@ span.txt-nfts {
   margin-bottom: 10rem;
   
 }
+.conteudo-1-txt {
+  margin-bottom: 5.5rem;
+}
+.conteudo-1-caixa-avatar{
+  display: flex;
+  align-items: flex-end;
+}
+.conteudo-1-caixa-avatar p {
+  margin-left: 0.6rem;
+ 
+}
 
 .txt-descubra {
   max-width: 59.6rem;
@@ -107,10 +120,29 @@ span.txt-nfts {
   color: var(--color-branco);
   font-size: 5rem;
   margin: auto 4rem;
+  
 }
 
 /*Galeria*/
 
+#galeria-1, #galeria-2 {
+  white-space: nowrap;
+}
+#galeria-1 {
+  margin-bottom: 6.44rem;
+  
+
+}
+#galeria div img {
+  border: 1px solid var(--color-branco);
+  margin-right: 1.16rem;
+
+
+}
+
+#galeria div img:last-child {
+  margin-right: 0;
+}
 
 
 /*Conteudo-2*/
@@ -236,6 +268,7 @@ margin-right: 12.6rem;
 }
 
 .all-astronautas {
+ 
   max-width: 37.69rem;
   transition: transform 0.4s;
 }
@@ -403,10 +436,12 @@ footer {
 }
 
 .rodape-2-form {
-  width: 40.2rem;
+  display: flex;
+  margin-top: 2.5rem;
 }
 #btn-email {
   width: 28rem;
+  height: 6.6rem;
   background-color: #0D0D0D;
   padding: 2rem;
   outline: none;
@@ -424,9 +459,15 @@ footer {
 }
 
 #btn-enviar {
-  max-width: 12.2rem;
+  width: 12.2rem;
+  height: 6.6rem;
   color: black;
   background-color: var(--color-branco);
+  font-weight: 700;
+  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+
 }
 
 
@@ -437,8 +478,18 @@ footer {
 .rodape-2-direito ul {
   margin-left: 12.2rem;
 }
+.rodape-2-direito ul li {
+  font-weight: 400;
+  color: var(--color-cinza);
+  margin-bottom: 1.5rem;
+}
+.rodape-2-direito ul li:first-child{
+  color:var(--color-branco);
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 1.7rem;
 
-
+}
 
 
 .btn-up {
@@ -452,9 +503,27 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 6.9rem 0;
+  color: var(--color-cinza);
+  font-size: 2rem;
 }
 
 .rodape-3 ul {
   display: flex;
-  gap: 2rem;
+  gap: 5rem;
+
+}
+.rodape-3 ul li {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 1440px){
+  body {
+    background-size: contain;
+
+  }
 }
