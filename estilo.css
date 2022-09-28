@@ -21,7 +21,7 @@ html {
 
 a {
   text-decoration: none;
-  color: black; 
+  color: var(--color-cinza); 
 }
 
 li {
@@ -74,12 +74,27 @@ body {
 #opcao li a {
   font-size: 1.8rem;
   color: var(--color-branco);
-  transition: opacity 0.2s;
+  position: relative;
 }
 
-#opcao li a:hover{
-  opacity: 0.8;
+
+#opcao li a::after{
+  content: '';
+  position: absolute;
+  bottom: -1rem;
+  left: 0;
+  width: 0%;
+  height: 1px;
+  transition: width 0.4s;
+  background-color: #FF5B50;
+
 }
+
+#opcao li a:hover::after {
+  width: 100%;
+}
+
+
 
 .logo {
   color: var(--color-branco);
@@ -411,12 +426,25 @@ margin-right: 12.6rem;
   display: inline-flex;
   transition: transform 0.4s;
   padding: 0.5rem;
+  position: relative;
  
   
 }
 
-.btn-ver-artistas:hover{
-  color: var(--color-laranja);
+.btn-ver-artistas::after{
+  content: '';
+  position: absolute;
+  bottom: -0.8rem;
+  left: 0;
+  width: 0%;
+  height: 1px;
+  transition: width 0.4s;
+  background-color: #FF5B50;
+
+}
+
+.btn-ver-artistas:hover::after{
+  width: 100%;
 }
 
 .btn-ver-artistas:hover .seta-laranja{
@@ -562,6 +590,14 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: transform 0.3s;
+
+  
+}
+
+.rodape-3 ul li:hover{
+  transform: scale(1.2);
+  
 }
 
 @media (min-width:1440px) {
