@@ -143,6 +143,23 @@ span.txt-nfts {
   margin-bottom: 10rem;
   
 }
+.badge {
+  position: relative;
+  animation-duration: 10s;
+  animation-name: rodando;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes rodando {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
 .conteudo-1-txt {
   margin-bottom: 5.5rem;
 }
