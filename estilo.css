@@ -149,6 +149,7 @@ span.txt-nfts {
   animation-name: rodando;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
+  animation-direction: reverse;
 }
 @keyframes rodando {
   from {
