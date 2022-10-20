@@ -42,8 +42,24 @@ li {
 main {
   background-color: #0E0E0E;
 }
+.menu-mobile {
+  display: none;
+  width: 4rem;
+  height: 3rem;
+  align-content: space-between;
 
+}
 
+.line-one, .line-two, .line-three {
+width: 100%;
+height: 3px;
+background-color: var(--color-branco);
+}
+
+.menu-mobile div + div {
+margin-top: 4px
+
+}
 
 
 /* Corpo */
@@ -696,6 +712,17 @@ footer {
 
 @media (min-width: 320px) and (max-width: 768px) {
 
+ #menu-desktop {
+  display: flex;
+  height: 7.2rem;
+  padding: 0;
+ }
+
+ .menu-mobile {
+  display: grid;
+ }
+
+
   #conteudo-1 {
     display: block;
   }
@@ -737,7 +764,7 @@ footer {
   .rodape-3{
     display: block;
   }
-  #opcao {
+  #opcao,.btn-conectar-carteira {
     display: none;
   }
   .caixa-astronauta {
@@ -759,6 +786,8 @@ footer {
   .caixa-de-txt-1 p, .caixa-de-txt-2 p {
     font-size: 1.4rem;
   }
+
+ 
 }
 
 
