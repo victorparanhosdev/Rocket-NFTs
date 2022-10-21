@@ -144,7 +144,7 @@ span.txt-nfts {
   animation-direction: reverse;
 }
 
-@keyframes rodandoo {
+@keyframes rodando {
   from {
     transform: rotate(0deg);
   }
@@ -526,7 +526,7 @@ footer {
 }
 
 #btn-enviar {
-  width: 12.2rem;
+  max-width: 12.2rem;
   height: 6.6rem;
   color: black;
   background-color: var(--color-branco);
@@ -569,7 +569,7 @@ footer {
   animation-timing-function: ease-in;
 }
 
-@keyframes examplee {
+@keyframes example {
   from {
     top: 0;
     left: 0;
@@ -613,6 +613,7 @@ footer {
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
+
   #menu-desktop {
     display: flex;
     height: 7.2rem;
@@ -697,7 +698,10 @@ footer {
   .rodape-2-esquerdo{
     padding: 0;
     margin: 5rem 1rem;
-    border-right: none
+    border-right: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
   }
   .rodape-2-direito ul {
@@ -711,6 +715,7 @@ footer {
   }
   .logo-txt-h1 {
     font-size: 3.1rem;
+    text-align: center;
   }
   .conteudo-1-caixa-avatar {
     display: block;
@@ -758,7 +763,9 @@ footer {
     display: block;
   }
   #btn-enviar {
+    max-width: 0;
     font-size: 1.7rem;
+    min-width: 9rem;
   }
 
   .caixa-de-txt-principal {
@@ -803,7 +810,11 @@ footer {
   }
 
   .rodape-2-form {
-    margin-top: 4.5rem
+    margin-top: 4.5rem;
+    justify-content: center;
+  }
+  .all-astronautas {
+    max-width: 100%;
   }
 
 }
