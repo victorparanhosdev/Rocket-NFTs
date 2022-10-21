@@ -30,7 +30,7 @@ li {
   margin: auto;
 }
 
-main {
+.main {
   background-color: #0e0e0e;
   border-bottom: 1px solid var(--color-cinza);
 }
@@ -526,7 +526,7 @@ footer {
 }
 
 #btn-enviar {
-  max-width: 12.2rem;
+  width: 12.2rem;
   height: 6.6rem;
   color: black;
   background-color: var(--color-branco);
@@ -566,18 +566,20 @@ footer {
   animation-duration: 0.7s;
   animation-iteration-count: infinite;
   animation-direction: alternate-reverse;
-  animation-timing-function: ease-in;
+  
 }
 
 @keyframes example {
   from {
-    top: 0;
+    top: 5px;
     left: 0;
   }
   to {
-    top: -20px;
+   
+    top: -5px;
     left: 0;
   }
+ 
 }
 
 .rodape-3 {
@@ -618,6 +620,7 @@ footer {
     display: flex;
     height: 7.2rem;
     padding: 0;
+    margin: 0 1rem;
   }
 
   .menu-mobile {
@@ -663,11 +666,13 @@ footer {
     width: 100%;
   }
   .caixa-artistas {
-    display: block;
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    gap: 2rem;
   }
 
   .caixa-artistas article + article {
-    margin-top: 2rem;
+    margin-top: 0;
   }
 
   .artista-1,
@@ -676,18 +681,48 @@ footer {
     margin-bottom: 0;
   }
   .all-artistas {
-    padding: 0;
-    min-width: 35rem;
-    height: 15rem;
+    display:block;
+    padding: 1.5rem;
+    width: 100%;
+    text-align: center;
+  
+   
   }
-  .caixa-mark {
-    padding: 2.5rem 0;
+  .all-artistas img{
+    margin-right: 0;
+  }
+  .all-artistas p {
+    font-size: 1.7rem;
   }
 
+  .caixa-mark{
+    flex-direction: row;
+
+    gap: 4rem;
+    padding: 5rem 1rem;
+   
+  
+  }
+  
+
+  .caixa-mark p{
+  font-size: 1.8rem;
+  }
+
+  .caixa-mark h1{
+   font-size: 4rem;
+   
+  
+  }
 
   .caixa-mark h1 + h1 {
-    margin-top: 0;
+    margin-top: 0rem;
+
   }
+
+
+
+  
   .rodape-1 {
     padding: 2rem 1rem;
   }
@@ -697,7 +732,7 @@ footer {
 
   .rodape-2-esquerdo{
     padding: 0;
-    margin: 5rem 1rem;
+    margin: 5rem auto;
     border-right: none;
     display: flex;
     flex-direction: column;
@@ -763,9 +798,10 @@ footer {
     display: block;
   }
   #btn-enviar {
-    max-width: 0;
+   
     font-size: 1.7rem;
-    min-width: 9rem;
+    border-radius: 0 1rem 1rem 0;
+
   }
 
   .caixa-de-txt-principal {
@@ -774,13 +810,23 @@ footer {
   }
   .caixa-de-txt-1 {
     margin-right: 0;
+    margin-bottom: 2rem;
+  }
+  .caixa-de-txt-2 {
+
+    margin-bottom: 2rem;
+  }
+
+  .btn-lorem{
+    margin-top: 1.2rem;
+    font-size: 1.6rem;
   }
   :root {
     font-size: 52%;
   }
   .caixa-de-txt-1 p,
   .caixa-de-txt-2 p {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
   .section {
     max-width: 100%;
@@ -808,13 +854,39 @@ footer {
 
 
   }
+  #btn-email {
+    width: 100%;
+    border-radius: 1rem 0 0 1rem;
+  }
 
   .rodape-2-form {
+    width: 100%;
     margin-top: 4.5rem;
     justify-content: center;
   }
   .all-astronautas {
     max-width: 100%;
+ 
+  }
+  .divisao-do-meio {
+    display: none;
   }
 
+  .divisao-direita {
+
+    margin-top: 5rem;
+
+ 
+  }
+  .rodape-2-txt {
+    min-width: 35rem;
+  }
+  .allimagens {
+    object-fit: cover;
+    object-position: right -19rem top;
+    
+    height: 25rem
+
+  }
+  
 }
