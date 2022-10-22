@@ -154,6 +154,7 @@ span.txt-nfts {
     transform: rotate(0deg);
   }
   to {
+    
     transform: rotate(360deg);
   }
 }
@@ -613,13 +614,9 @@ footer {
   transform: scale(1.2);
 }
 
-@media (min-width: 1440px) {
-  body {
-    background-repeat: repeat-x;
-  }
-}
 
-@media (max-width: 768px) {
+
+@media (min-width: 280px) and (max-width: 1300px){
 
   #menu-desktop {
     display: flex;
@@ -730,7 +727,7 @@ footer {
 
   
   .rodape-1 {
-    padding: 2rem 1rem;
+    padding: 2rem;
   }
   .rodape-2 {
     display: block;
@@ -767,6 +764,7 @@ footer {
     width: 13rem;
   }
   .conteudo-1-txt {
+    max-width: 30rem;
     margin-bottom: 0;
   }
 
@@ -805,7 +803,7 @@ footer {
     margin-top: 8rem
   }
   #btn-enviar {
-   
+    width: 30%;
     border-radius: 0 1rem 1rem 0;
 
   }
@@ -828,7 +826,7 @@ footer {
     font-size: 1.6rem;
   }
   :root {
-    font-size: 52%;
+    font-size: 45%;
   }
   .caixa-de-txt-1 p,
   .caixa-de-txt-2 p {
@@ -836,7 +834,7 @@ footer {
   }
   .section {
     max-width: 100%;
-    margin: 0 1rem;
+    margin: 0 2rem;
   }
   #galeria.section {
     margin: 0;
@@ -861,12 +859,12 @@ footer {
 
   }
   #btn-email {
- 
+    width: 70%;
     border-radius: 1rem 0 0 1rem;
   }
 
   .rodape-2-form {
-    width: 100%;
+    width: 90%;
     margin-top: 4.5rem;
     justify-content: center;
   }
@@ -898,5 +896,113 @@ footer {
 
   
   
+  @media (min-width: 375px ){
+    :root {
+      font-size: 52%;
+    }
+  }
+  
+  @media (min-width: 600px ){
+    :root {
+      font-size: 60%;
+    }
+    .rodape-3 {
+      flex-direction: inherit;
+      margin: 0 2rem;
+    }
+  
+    .rodape-2-esquerdo {
+      display: block;
+    }
+    .rodape-2-txt {
+      max-width: none;
+    }
+    .rodape-2-form {
+      width: 100%;
+    }
+    .caixa-artistas {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    .caixa-astronauta {
+      display: flex;
+    }
+  
+    .divisao-direita {
+      margin-top: 0;
+    }
+  
+    .all-astronautas img {
+      height: 15rem;
+  
+   
+      object-fit: cover;
+      object-position: top;
+    }
+    .all-astronautas p{
+      font-size: 1.8rem;
+    }
+    .all-astronautas h1 {
+      
+      font-size: 2.5rem;
+    }
+  }
+  
+  @media (min-width: 710px ){
+    .all-astronautas img {
+      height: auto;
+    }
+    .conteudo-1-txt {
+      max-width: 50rem;
+    }
+    .badge {
+      width: auto;
+    }
+    :root {
+      font-size: 70%;
+    }
+    .logo-txt-h1 {
+      font-size: 5rem;
+    }
+    .logo {
+      font-size: 3.2rem;
+    }
+  
+   
+  }
+  @media (min-width: 1000px){
+
+  #galeria-all {
+    grid-template-areas: "A B C" "D E F" "G H H"
+  }
+  #galeria-all img:nth-child(8) {
+    grid-area: H;
+  
+    object-position: top;
+   
+  }
+
+  #galeria-all img {
+    height: 18rem;
+  }
+
+
+  #galeria.section {
+    margin: 0 2rem;
+  }
+  .divisao-do-meio {
+    display: block;
+  }
+  .caixa-artistas {
+    gap: 4rem;
+
+  }
+
 }
 
+}
+
+@media (min-width: 1440px) {
+  body {
+    background-repeat: repeat-x;
+  }
+}
