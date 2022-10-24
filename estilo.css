@@ -1130,7 +1130,7 @@ nav.active .line-three {
 }
 
 @media (min-width: 1000px) and (max-width: 1300px) {
-
+ 
   #galeria-all {
     grid-template-areas: "A B C""D E F""G H H"
   }
@@ -1186,6 +1186,25 @@ nav.active .line-three {
     text-align: start;
     width: 40rem;
 
+  }
+
+}
+@media (min-width: 1180px) and (max-width: 1300px){ 
+  header {
+    display: block;
+    position: relative;
+    border: none;
+    background-color: transparent;
+    box-shadow: none;
+  }
+  .menu-mobile {
+    display: none;
+  }
+  #opcao, .btn-conectar-carteira {
+    display: flex;
+  }
+  .rodape-2 {
+    justify-content: space-around;
   }
 
 }
