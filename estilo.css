@@ -32,7 +32,6 @@ li {
 }
 header {
   position: relative;
-  
 }
 .main {
   background-color: #0e0e0e;
@@ -41,7 +40,6 @@ header {
 
 .menu-mobile {
   display: none;
-  
 }
 
 .line-one,
@@ -51,11 +49,7 @@ header {
   height: 0.1rem;
   background-color: var(--color-branco);
   transition: transform 0.3s;
-  
-
 }
-
-
 
 /* Corpo */
 body {
@@ -71,13 +65,11 @@ menu {
   justify-content: space-between;
   align-items: center;
   padding-top: 5.7rem;
-  
 }
 #menu-desktop {
   display: flex;
   gap: 23.8rem;
   align-items: center;
- 
 }
 
 #opcao {
@@ -134,7 +126,6 @@ span.txt-nfts {
   background-color: rgba(255, 255, 255, 0.8);
 }
 
-
 /*Conteudo-1*/
 
 #conteudo-1 {
@@ -146,18 +137,13 @@ span.txt-nfts {
 }
 
 .badge {
-
   position: relative;
   animation-duration: 10s;
 
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: reverse;
-
-
 }
-
-
 
 @keyframes rodando {
   from {
@@ -165,7 +151,6 @@ span.txt-nfts {
   }
 
   to {
-
     transform: rotate(360deg);
   }
 }
@@ -196,7 +181,7 @@ span.txt-nfts {
 #galeria-all {
   display: grid;
   gap: 1.6rem;
-  grid-template-areas: 'A B C D''E F G H';
+  grid-template-areas: 'A B C D' 'E F G H';
   height: 45.7rem;
   align-content: space-between;
 }
@@ -208,7 +193,6 @@ span.txt-nfts {
   display: block;
   object-fit: cover;
 }
-
 
 #galeria-all img:hover {
   transition: transform 0.3s;
@@ -245,7 +229,7 @@ span.txt-nfts {
   color: var(--color-cinza);
 }
 
-.caixa-mark h1+h1 {
+.caixa-mark h1 + h1 {
   margin-top: 7rem;
 }
 
@@ -296,7 +280,8 @@ span.txt-nfts {
 /* Conteudo 3 */
 
 #conteudo-3 {
-  padding: 15rem 0;
+  padding-top: 15rem;
+
 }
 
 .logo-txt-h1 {
@@ -309,37 +294,34 @@ span.txt-nfts {
 }
 
 .caixa-astronauta {
+
   margin-top: 15.8rem;
-  display: flex;
-  justify-content: space-between;
-}
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  position: relative;
+  gap: 5rem;
 
-.all-astronautas {
-  max-width: 37.69rem;
-  transition: transform 0.4s;
 }
-
-.divisao-do-meio {
-  width: 1px;
+.caixa-astronauta::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0.1rem;
+  height: 100%;
   background-color: var(--color-cinza);
 }
 
-.all-astronautas:hover {
+.caixa-astronauta > div {
+  width: 37.69rem;
+  transition: transform 0.4s;
+}
+
+
+.caixa-astronauta > div:hover {
+  transition: transform 0.4s;
   transform: scale(1.05);
-}
-
-.all-astronautas:hover .seta {
-  transform: rotate(-32deg);
-}
-
-.all-astronautas h1 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 3rem;
-  font-weight: 500;
-  margin-bottom: 4.4rem;
-  color: var(--color-branco);
 }
 
 .seta {
@@ -350,31 +332,50 @@ span.txt-nfts {
   transition: transform 0.4s;
 }
 
-.all-astronautas p {
-  color: var(--color-cinza);
+.caixa-astronauta > div:hover .seta {
+  transition: transform 0.4s;
+  transform: rotate(-32deg);
+}
+.caixa-astronauta h1 {
+  font-family: 'Montserrat';
+  font-style: normal;
+  color: #ffffff;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 4.4rem;
+}
+
+.caixa-astronauta p {
+  font-family: 'Montserrat';
+  font-style: normal;
   font-size: 2rem;
   display: flex;
   justify-content: space-between;
   font-weight: 600;
   margin-bottom: 2.6rem;
+
+  color: #5a5757;
 }
 
-.all-astronautas p span {
-  font-size: 3rem;
-  color: var(--color-laranja);
+.caixa-astronauta p span {
+  font-family: 'Montserrat';
+  font-style: normal;
   font-size: 2rem;
   font-weight: 400;
+
+  color: #ff5b50;
 }
 
-.all-astronautas img {
+.caixa-astronauta div img {
   width: 100%;
   display: block;
 }
 
-.astronauta-1,
-.astronauta-2 {
-  margin-bottom: 5rem;
-}
+
 
 /* Conteudo 4 */
 
@@ -580,7 +581,6 @@ footer {
   animation-duration: 0.7s;
   animation-iteration-count: infinite;
   animation-direction: alternate-reverse;
-
 }
 
 @keyframes example {
@@ -590,11 +590,9 @@ footer {
   }
 
   to {
-
     top: -5px;
     left: 0;
   }
-
 }
 
 .rodape-3 {
@@ -624,42 +622,31 @@ footer {
   transform: scale(1.2);
 }
 
-
-
 @media (min-width: 280px) and (max-width: 1300px) {
-
-
   menu {
     padding: 0;
     width: 100%;
- 
   }
 
- 
   .menu-mobile {
     width: 3.2rem;
     cursor: pointer;
     display: grid;
     gap: 0.8rem;
-   
   }
 
-  menu.active .line-two{
+  menu.active .line-two {
     display: none;
-  
   }
 
- menu.active .line-one {
-   
-    transform: rotate(-45deg)translateX(-0.7rem);
-   
+  menu.active .line-one {
+    transform: rotate(-45deg) translateX(-0.7rem);
   }
- menu.active .line-three {
-    transform: rotate(45deg)translateX(-0.7rem);
+  menu.active .line-three {
+    transform: rotate(45deg) translateX(-0.7rem);
   }
-  
+
   #menu-desktop {
-    
     display: flex;
     flex-direction: column;
     padding-top: 5rem;
@@ -674,68 +661,51 @@ footer {
     opacity: 0;
     visibility: hidden;
     gap: 6rem;
-    
   }
   menu.active #menu-desktop {
     left: 0;
     transition: left 0.4s;
     opacity: 1;
     visibility: visible;
-
-
   }
-  menu .btn-conectar-carteira, menu #opcao li{
+  menu .btn-conectar-carteira,
+  menu #opcao li {
     transform: translateX(-60rem);
     transition: transform 0.2s;
-   
   }
-  
 
   menu.active #opcao li:nth-child(1) {
     transform: translateX(0rem);
     transition-delay: 200ms;
-  
   }
   menu.active #opcao li:nth-child(2) {
     transform: translateX(0rem);
     transition-delay: 300ms;
-  
-  
   }
   menu.active #opcao li:nth-child(3) {
     transform: translateX(0rem);
     transition-delay: 400ms;
-   
   }
- 
+
   menu.active .btn-conectar-carteira {
     transform: translateX(0px);
     transition-delay: 500ms;
 
-
-
     display: flex;
     color: white;
     background-color: black;
-    border:1px solid var(--color-cinza);
+    border: 1px solid var(--color-cinza);
     border-radius: 1rem;
- 
-
   }
   menu.active #opcao li a {
-    font-size: 3rem;   
-
+    font-size: 3rem;
   }
 
-
- menu.active #opcao {
+  menu.active #opcao {
     display: grid;
     place-items: center;
     grid: 0;
-
   }
-
-
 
   .logo {
     font-size: 2.8rem;
@@ -796,7 +766,7 @@ footer {
     margin-top: 6rem;
   }
 
-  .caixa-artistas article+article {
+  .caixa-artistas article + article {
     margin-top: 0;
   }
 
@@ -811,8 +781,6 @@ footer {
     padding: 1.5rem;
     width: 100%;
     text-align: center;
-
-
   }
 
   .all-artistas img {
@@ -828,10 +796,7 @@ footer {
 
     gap: 4rem;
     padding: 5rem 1rem;
-
-
   }
-
 
   .caixa-mark p {
     font-size: 1.8rem;
@@ -839,15 +804,11 @@ footer {
 
   .caixa-mark h1 {
     font-size: 4rem;
-
-
   }
 
-  .caixa-mark h1+h1 {
+  .caixa-mark h1 + h1 {
     margin-top: 0rem;
-
   }
-
 
   .rodape-1 {
     padding: 2rem;
@@ -864,18 +825,14 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-
   }
 
   .rodape-2-direito ul {
     margin-left: 0;
-
   }
 
   .rodape-2-txt {
     text-align: center;
-
-
   }
 
   .logo-txt-h1 {
@@ -909,7 +866,6 @@ footer {
     flex-direction: column-reverse;
     gap: 3rem;
     padding: 3rem 0;
-
   }
 
   #rodape.section {
@@ -922,19 +878,32 @@ footer {
     align-items: center;
     margin-bottom: 3.5rem;
   }
-
-
-
-
-  .caixa-astronauta {
-    display: block;
-    margin-top: 8rem
+  .caixa-astronauta > div {
+    min-width: 37.69rem;
+    transition: transform 0.4s;
   }
+  
+.caixa-astronauta {
+  margin-top: 10.8rem;
+  display: flex;
+  overflow: scroll;
+  gap: 2.5rem;
+  
+}
+.caixa-astronauta > div:hover {
+  transform: none;
+
+}
+
+
+.caixa-astronauta::after {
+  display: none;
+}
+
 
   #btn-enviar {
     width: 30%;
     border-radius: 0 1rem 1rem 0;
-
   }
 
   .caixa-de-txt-principal {
@@ -948,7 +917,6 @@ footer {
   }
 
   .caixa-de-txt-2 {
-
     margin-bottom: 2rem;
   }
 
@@ -992,8 +960,6 @@ footer {
     width: 7.5rem;
     height: 7.5rem;
     background-size: 2.4rem;
-
-
   }
 
   #btn-email {
@@ -1007,46 +973,31 @@ footer {
     justify-content: center;
   }
 
-  .all-astronautas {
-    max-width: 100%;
-
-  }
-
-  .divisao-do-meio {
-    display: none;
-  }
-
-  .divisao-direita {
-
-    margin-top: 5rem;
 
 
-  }
+
 
   .allimagens {
     object-fit: cover;
 
-
-    height: 25rem
+    height: 25rem;
   }
 
   .lado-direito {
     border-left: none;
   }
-
-
-
-
-
 }
 
 @media (min-width: 375px) and (max-width: 1300px) {
   :root {
     font-size: 52%;
   }
+
 }
 
 @media (min-width: 600px) and (max-width: 1300px) {
+
+
   :root {
     font-size: 60%;
   }
@@ -1076,24 +1027,14 @@ footer {
     display: flex;
   }
 
-  .divisao-direita {
-    margin-top: 0;
-  }
-
-  .all-astronautas img {
-    height: 15rem;
 
 
-    object-fit: cover;
-    object-position: top;
-  }
 
-  .all-astronautas p {
+  .caixa-astronauta p {
     font-size: 1.8rem;
   }
 
-  .all-astronautas h1 {
-
+  .caixa-astronauta h1 {
     font-size: 2.5rem;
   }
 
@@ -1101,66 +1042,61 @@ footer {
     display: grid;
     gap: 1rem;
     grid-template-areas:
-        "A B C"
-        "D E F"
-        "G H H";
+      'A B C'
+      'D E F'
+      'G H H';
     overflow: auto;
     height: auto;
   }
   #galeria-all img:nth-child(1) {
     grid-area: A;
   }
-  
+
   #galeria-all img:nth-child(2) {
     grid-area: B;
   }
-  
+
   #galeria-all img:nth-child(3) {
     grid-area: C;
   }
-  
+
   #galeria-all img:nth-child(4) {
     grid-area: D;
   }
-  
+
   #galeria-all img:nth-child(5) {
     grid-area: E;
   }
-  
+
   #galeria-all img:nth-child(6) {
     grid-area: F;
   }
-  
+
   #galeria-all img:nth-child(7) {
     grid-area: G;
   }
-  
+
   #galeria-all img:nth-child(8) {
     grid-area: H;
   }
-  
+
   #galeria-all img:nth-child(8) {
     grid-area: H;
 
     object-position: top;
-
   }
 
   #galeria-all img {
     height: 18rem;
   }
 
-
   #galeria.section {
     margin: 0 2rem;
   }
-  
-
-
 }
 
 @media (min-width: 710px) and (max-width: 1300px) {
-  .all-astronautas img {
+  .caixa-astronauta div img {
     height: auto;
   }
 
@@ -1183,23 +1119,13 @@ footer {
   .logo {
     font-size: 3.2rem;
   }
-
-  
-
-
 }
 
 @media (min-width: 1000px) and (max-width: 1300px) {
- 
 
-
-  .divisao-do-meio {
-    display: block;
-  }
 
   .caixa-artistas {
     gap: 4rem;
-
   }
 
   .rodape-2 {
@@ -1209,46 +1135,70 @@ footer {
     padding: 5rem 2rem;
   }
 
-  .rodape-2-direito ul+ul {
+  .rodape-2-direito ul + ul {
     margin-left: 6.2rem;
-
   }
 
   .rodape-2-direito {
     padding: 0;
-
   }
 
   .rodape-2-esquerdo {
-
     margin: 0;
   }
 
   .rodape-2-txt {
     text-align: start;
     width: 40rem;
-
   }
 
+  .caixa-astronauta {
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    overflow: auto;
+    gap: 5rem;
+    
+  }
 }
-@media (min-width: 1180px) and (max-width: 1300px){ 
+@media (min-width: 1180px) and (max-width: 1300px) {
+  menu {
+    padding-top: 5.7rem;
+  }
   header {
-    display: block;
     position: relative;
     border: none;
     background-color: transparent;
     box-shadow: none;
   }
+  menu .btn-conectar-carteira,
+  menu #opcao li {
+    transform: translateX(0);
+  }
+  #menu-desktop {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    position: static;
+    height: auto;
+    opacity: 1;
+    visibility: visible;
+    gap: 0;
+    width: auto;
+    padding: 0;
+    border-top: none;
+    gap: 15rem;
+  }
   .menu-mobile {
     display: none;
   }
-  #opcao, .btn-conectar-carteira {
+  #opcao,
+  .btn-conectar-carteira {
     display: flex;
   }
   .rodape-2 {
     justify-content: space-around;
   }
-
 }
 
 @media (min-width: 1440px) {
