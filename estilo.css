@@ -30,20 +30,22 @@ li {
   max-width: 127.7rem;
   margin: auto;
 }
+
 header {
   position: relative;
 }
+
 .main {
   background-color: #0e0e0e;
   border-bottom: 1px solid var(--color-cinza);
 }
 
 
-.topdown{
+.topdown {
   animation-name: topdown;
   animation-fill-mode: backwards;
-  animation-duration: 1s;
-  animation-delay: 300ms;
+  animation-duration: 0.8s;
+  animation-delay: 200ms;
 }
 
 @keyframes topdown {
@@ -87,6 +89,7 @@ menu {
   align-items: center;
   padding-top: 5.7rem;
 }
+
 #menu-desktop {
   display: flex;
   gap: 23.8rem;
@@ -151,32 +154,36 @@ span.txt-nfts {
 .zoom {
   animation-name: zoomm;
   animation-fill-mode: backwards;
-  animation-duration: 1s;
+  animation-duration: 0.8s;
 
 }
 
 @keyframes zoom {
-  from{
+  from {
     transform: scale(0.5);
+    opacity: 0;
 
   }
+
   top {
+    opacity: 1;
     transform: scale(1)
-
   }
-  
+
 }
 
 @keyframes zoomm {
-  from{
+  from {
+    opacity: 0;
     transform: translateX(-400rem);
 
   }
-  top {
-    transform: translateX(0)
 
+  top {
+    opacity: 1;
+    transform: translateX(0)
   }
-  
+
 }
 
 #conteudo-1 {
@@ -232,7 +239,7 @@ span.txt-nfts {
 #galeria-all {
   display: grid;
   gap: 1.6rem;
-  grid-template-areas: 'A B C D' 'E F G H';
+  grid-template-areas: 'A B C D''E F G H';
   height: 45.7rem;
   align-content: space-between;
 }
@@ -280,7 +287,7 @@ span.txt-nfts {
   color: var(--color-cinza);
 }
 
-.caixa-mark h1 + h1 {
+.caixa-mark h1+h1 {
   margin-top: 7rem;
 }
 
@@ -353,6 +360,7 @@ span.txt-nfts {
   gap: 5rem;
 
 }
+
 .caixa-astronauta::after {
   content: '';
   display: block;
@@ -364,13 +372,13 @@ span.txt-nfts {
   background-color: var(--color-cinza);
 }
 
-.caixa-astronauta > div {
+.caixa-astronauta>div {
   max-width: 37.69rem;
   transition: transform 0.4s;
 }
 
 
-.caixa-astronauta > div:hover {
+.caixa-astronauta>div:hover {
   transition: transform 0.4s;
   transform: scale(1.05);
 }
@@ -383,10 +391,11 @@ span.txt-nfts {
   transition: transform 0.4s;
 }
 
-.caixa-astronauta > div:hover .seta {
+.caixa-astronauta>div:hover .seta {
   transition: transform 0.4s;
   transform: rotate(-32deg);
 }
+
 .caixa-astronauta h1 {
   font-family: 'Montserrat';
   font-style: normal;
@@ -676,9 +685,9 @@ footer {
 @media (min-width: 280px) and (max-width: 1300px) {
   .zoom {
     animation-name: zoom;
-    animation-delay: 300ms;
+    animation-delay: 200ms;
   }
-  
+
   menu {
     padding: 0;
     width: 100%;
@@ -698,6 +707,7 @@ footer {
   menu.active .line-one {
     transform: rotate(-45deg) translateX(-0.7rem);
   }
+
   menu.active .line-three {
     transform: rotate(45deg) translateX(-0.7rem);
   }
@@ -718,12 +728,14 @@ footer {
     visibility: hidden;
     gap: 6rem;
   }
+
   menu.active #menu-desktop {
     left: 0;
     transition: left 0.4s;
     opacity: 1;
     visibility: visible;
   }
+
   menu .btn-conectar-carteira,
   menu #opcao li {
     transform: translateX(-60rem);
@@ -734,10 +746,12 @@ footer {
     transform: translateX(0rem);
     transition-delay: 200ms;
   }
+
   menu.active #opcao li:nth-child(2) {
     transform: translateX(0rem);
     transition-delay: 300ms;
   }
+
   menu.active #opcao li:nth-child(3) {
     transform: translateX(0rem);
     transition-delay: 400ms;
@@ -753,6 +767,7 @@ footer {
     border: 1px solid var(--color-cinza);
     border-radius: 1rem;
   }
+
   menu.active #opcao li a {
     font-size: 3rem;
   }
@@ -822,7 +837,7 @@ footer {
     margin-top: 6rem;
   }
 
-  .caixa-artistas article + article {
+  .caixa-artistas article+article {
     margin-top: 0;
   }
 
@@ -862,7 +877,7 @@ footer {
     font-size: 4rem;
   }
 
-  .caixa-mark h1 + h1 {
+  .caixa-mark h1+h1 {
     margin-top: 0rem;
   }
 
@@ -935,22 +950,24 @@ footer {
     margin-bottom: 3.5rem;
   }
 
-.caixa-astronauta {
-  margin-top: 10.8rem;
-  display: block;
-  
-}
-.caixa-astronauta > div {
-  min-width: 100%;
-}
-.caixa-astronauta > div + div {
-  margin-top: 5rem;
-}
+  .caixa-astronauta {
+    margin-top: 10.8rem;
+    display: block;
+
+  }
+
+  .caixa-astronauta>div {
+    min-width: 100%;
+  }
+
+  .caixa-astronauta>div+div {
+    margin-top: 5rem;
+  }
 
 
-.caixa-astronauta::after {
-  display: none;
-}
+  .caixa-astronauta::after {
+    display: none;
+  }
 
 
   #btn-enviar {
@@ -1035,7 +1052,7 @@ footer {
     border-left: none;
   }
 
-  
+
 }
 
 @media (min-width: 375px) and (max-width: 1300px) {
@@ -1078,7 +1095,7 @@ footer {
     grid-template-columns: 1fr 1fr;
   }
 
-  .caixa-astronauta > div + div {
+  .caixa-astronauta>div+div {
     margin: 0;
   }
 
@@ -1102,6 +1119,7 @@ footer {
     overflow: auto;
     height: auto;
   }
+
   #galeria-all img:nth-child(1) {
     grid-area: A;
   }
@@ -1187,7 +1205,7 @@ footer {
     padding: 5rem 2rem;
   }
 
-  .rodape-2-direito ul + ul {
+  .rodape-2-direito ul+ul {
     margin-left: 6.2rem;
   }
 
@@ -1206,20 +1224,24 @@ footer {
 
 
 }
+
 @media (min-width: 1180px) and (max-width: 1300px) {
   menu {
     padding-top: 5.7rem;
   }
+
   header {
     position: relative;
     border: none;
     background-color: transparent;
     box-shadow: none;
   }
+
   menu .btn-conectar-carteira,
   menu #opcao li {
     transform: translateX(0);
   }
+
   #menu-desktop {
     background-color: transparent;
     display: flex;
@@ -1234,13 +1256,16 @@ footer {
     border-top: none;
     gap: 15rem;
   }
+
   .menu-mobile {
     display: none;
   }
+
   #opcao,
   .btn-conectar-carteira {
     display: flex;
   }
+
   .rodape-2 {
     justify-content: space-around;
   }
