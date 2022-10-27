@@ -1099,12 +1099,13 @@ footer {
 
   #galeria-all {
     display: grid;
-    gap: 1.6rem;
+    gap: 1rem;
     grid-template-areas:
         "A B C"
         "D E F"
         "G H H";
     overflow: auto;
+    height: auto;
   }
   #galeria-all img:nth-child(1) {
     grid-area: A;
