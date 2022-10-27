@@ -43,11 +43,12 @@ header {
   animation-name: topdown;
   animation-fill-mode: backwards;
   animation-duration: 1s;
+  animation-delay: 300ms;
 }
 
 @keyframes topdown {
   from {
-    transform: translateY(10rem);
+    transform: translateY(20rem);
     opacity: 0;
 
   }
@@ -151,6 +152,7 @@ span.txt-nfts {
   animation-name: zoomm;
   animation-fill-mode: backwards;
   animation-duration: 1s;
+
 }
 
 @keyframes zoom {
@@ -167,7 +169,7 @@ span.txt-nfts {
 
 @keyframes zoomm {
   from{
-    transform: translateX(30rem);
+    transform: translateX(-400rem);
 
   }
   top {
@@ -674,8 +676,7 @@ footer {
 @media (min-width: 280px) and (max-width: 1300px) {
   .zoom {
     animation-name: zoom;
-    animation-fill-mode: backwards;
-    animation-duration: 1s;
+    animation-delay: 300ms;
   }
   
   menu {
