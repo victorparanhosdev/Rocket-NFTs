@@ -314,7 +314,7 @@ span.txt-nfts {
 }
 
 .caixa-astronauta > div {
-  width: 37.69rem;
+  max-width: 37.69rem;
   transition: transform 0.4s;
 }
 
@@ -879,15 +879,14 @@ footer {
     align-items: center;
     margin-bottom: 3.5rem;
   }
-  .caixa-astronauta > div {
-    width: 100%;
-    transition: transform 0.4s;
-  }
-  
+
 .caixa-astronauta {
   margin-top: 10.8rem;
   display: block;
   
+}
+.caixa-astronauta > div {
+  min-width: 100%;
 }
 .caixa-astronauta > div + div {
   margin-top: 5rem;
@@ -971,10 +970,6 @@ footer {
     justify-content: center;
   }
 
-
-
-
-
   .allimagens {
     object-fit: cover;
 
@@ -984,13 +979,7 @@ footer {
   .lado-direito {
     border-left: none;
   }
-  #galeria-all img:hover {
-    transform: none;
-  }
-  
-.caixa-astronauta > div:hover {
-  transform: none;
-}
+
   
 }
 
@@ -1106,9 +1095,7 @@ footer {
 }
 
 @media (min-width: 710px) and (max-width: 1300px) {
-  .caixa-astronauta div img {
-    height: auto;
-  }
+
 
   .conteudo-1-txt {
     max-width: 50rem;
@@ -1132,13 +1119,7 @@ footer {
 }
 
 @media (min-width: 1000px) and (max-width: 1300px) {
-  #galeria-all img:hover {
-    transform: scale(1.02);
-  }
-  
-.caixa-astronauta > div:hover {
-  transform: scale(1.05);
-}
+
 
   .caixa-artistas {
     gap: 4rem;
