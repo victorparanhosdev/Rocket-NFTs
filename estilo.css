@@ -624,9 +624,6 @@ footer {
 
 @media (min-width: 280px) and (max-width: 1300px) {
 
-  .seta {
-    background-size: 7rem;
-  }
   menu {
     padding: 0;
     width: 100%;
@@ -987,6 +984,14 @@ footer {
   .lado-direito {
     border-left: none;
   }
+  #galeria-all img:hover {
+    transform: none;
+  }
+  
+.caixa-astronauta > div:hover {
+  transform: none;
+}
+  
 }
 
 @media (min-width: 375px) and (max-width: 1300px) {
@@ -1127,7 +1132,13 @@ footer {
 }
 
 @media (min-width: 1000px) and (max-width: 1300px) {
-
+  #galeria-all img:hover {
+    transform: scale(1.02);
+  }
+  
+.caixa-astronauta > div:hover {
+  transform: scale(1.05);
+}
 
   .caixa-artistas {
     gap: 4rem;
