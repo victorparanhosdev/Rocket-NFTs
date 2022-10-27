@@ -636,8 +636,6 @@ footer {
   }
 
  
-
-
   .menu-mobile {
     width: 3.2rem;
     cursor: pointer;
@@ -778,7 +776,7 @@ footer {
   }
 
   #galeria-all {
-    height: auto;
+    height: 24rem;
     display: flex;
     overflow: scroll;
     grid-template-areas: none;
@@ -788,6 +786,7 @@ footer {
 
   #galeria-all img {
     width: 100%;
+    display: block;
   }
 
   .caixa-artistas {
