@@ -1150,11 +1150,6 @@ footer {
 
   #galeria-all img:nth-child(8) {
     grid-area: H;
-  }
-
-  #galeria-all img:nth-child(8) {
-    grid-area: H;
-
     object-position: top;
   }
 
